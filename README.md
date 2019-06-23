@@ -3,20 +3,28 @@
 ## Usage
 
 ```
-$ mkdir hello
-$ cd hello
-$ cat << EOF > hello.c
-#include <stdio.h>
-int main(int argc, char ** argv) {
-  printf("Hello, world!\n");
-}
-EOF
+git clone https://github.com/geocolumbus/webassembly-notes.git
+mv webassembly-notes hello
+cd hello
 ```
 
 ### Compile
 ```
 $ emcc hello.c -s WASM=1 -o hello.html
 ```
+
+or
+
+```
+./compile
+```
+
+### Clean
+
+```
+./clean
+```
+
 ### Serve
 
 To serve the compiled files over HTTP, we can use the emrun web server provided with the Emscripten SDK:

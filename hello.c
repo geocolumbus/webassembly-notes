@@ -1,4 +1,7 @@
+#include <stdio.h>
+
 int main(int argc, char **argv)
 {
-  int counter = 0;
+  int counter = 234;
+  printf("%i\n", counter);
 }
